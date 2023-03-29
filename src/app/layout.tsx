@@ -1,3 +1,7 @@
+import { Sidebar } from '@/components/Sidebar'
+import { Header } from '@/components/Header'
+import { HeroPattern } from '@/components/HeroPattern'
+
 import './globals.css'
 
 import { Inter } from 'next/font/google'
@@ -16,7 +20,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="bg-zinc-900">{children}</body>
+      <body className="bg-zinc-900">
+        <Sidebar />
+        
+        <div className="">
+          <Header />
+          <HeroPattern />
+
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
