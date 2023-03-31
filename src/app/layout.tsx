@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="bg-zinc-900">
         <Sidebar />
         
-        <div className="ml-80 relative h-screen">
+        <div className="lg:ml-80 relative h-screen">
           <Header />
           <HeroPattern />
 
